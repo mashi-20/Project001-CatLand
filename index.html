@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cat Land</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>WELCOME TO CAT LAND!</h1>
+  <button class="open-btn" onclick="openModal()">What's Your Cat?</button>
+  <button id="toggleDashboardBtn" class="toggle-dashboard-btn" onclick="toggleDashboard()">⮜</button>
+
+  <div class="dashboard" id="dashboard">
+    <strong>Meownitor</strong><br><ul id="catList"></ul>
+  </div>
+  <div class="modal" id="catModal">
+    <div class="modal-content">
+      <h2>What's Your Cat?</h2>
+      <div class="cat-options">
+        <img src="white_cat.png" alt="White Cat" onclick="selectCat('white_cat.png')">
+        <img src="siamese_cat.png" alt="Siamese Cat" onclick="selectCat('siamese_cat.png')">
+        <img src="black_cat.png" alt="Black Cat" onclick="selectCat('black_cat.png')">
+        <img src="orange_cat.png" alt="Orange Cat" onclick="selectCat('orange_cat.png')">
+        <img src="calico_cat.png" alt="Calico Cat" onclick="selectCat('calico_cat.png')">
+      </div>
+      <button class="close-btn" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="nameModal">
+    <div class="modal-content">
+      <h2>Name your <span id="catTypeName"></span> cat</h2>
+      <input type="text" id="catNameInput" placeholder="Enter name" style="padding: 6px; width: 80%; margin-top: 10px;" />
+      <br><br>
+      <button onclick="confirmName()">Confirm</button>
+      <button class="close-btn" onclick="closeNameModal()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
