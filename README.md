@@ -15,7 +15,7 @@ Users can add cats, name them, drag them around, watch them fall in love, and ev
 - 🧠 Cats move randomly, follow your cursor or other cats
 - 💗 Heart animations when cats meet
 - 🖱️ Drag and drop cats anywhere
-- 📋 Toggleable **Cat Pawnel** (Dashboard) listing all your named cats
+- 📋 Toggleable **Meownitor** (Dashboard) listing all your named cats
 
 ---
 
